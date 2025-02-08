@@ -77,6 +77,9 @@
       .wordmark img {
         width: 70%;
       }
+
+      body { margin: 0; }
+      canvas { display: block; }
     </style>
 
     <!--[if lt IE 9]>
@@ -85,6 +88,8 @@
     <title>WebXR - Samples</title>
   </head>
   <body>
+    <canvas id="xr-canvas"></canvas>
+    <script src="main.js"></script>
 
     <div class='container' id='container'>
       <header class='header'>
@@ -214,6 +219,10 @@
             { title: 'Positional Audio', category: 'Content',
             path: 'positional-audio.html',
             description: 'Demonstrates playing audio that sounds as if it originates at a specific point in the space.' },
+
+            { title: '3D Math Formula Visualization', category: 'Content',
+              path: 'math-formula-visualization.html',
+              description: 'Visualizes a 3D world driven by a math formula using shaders.' },
 
             { title: 'Spectator Mode', category: 'Advanced Techniques',
               path: 'spectator-mode.html',
